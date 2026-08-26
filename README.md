@@ -22,4 +22,4 @@ Puedes ver la página web en vivo aquí: (https://github.com/cyberthreatsdefende
 
 Licencia
 
-Este proyecto está bajo la licencia [Nombre de la Licencia, ej: MIT].
+Este proyecto está bajo la licencia Creative Commons Attribution 4.0 International.
