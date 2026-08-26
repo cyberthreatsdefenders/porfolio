@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Académico y de Investigación</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-user-graduate"></i>
+                <span>Academia & Investigación</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="investigacion.html">Investigación</a></li>
+                    <li><a href="publicaciones.html">Publicaciones</a></li>
+                    <li><a href="docencia.html">Docencia</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="carousel">
+                <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=2070&auto=format&fit=crop');">
+                    <div class="overlay">
+                        <h1>Innovación en la Investigación</h1>
+                        <p>Explorando el conocimiento y transformando el futuro.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1546410531-bb4caa6b454d?q=80&w=2071&auto=format&fit=crop');">
+                    <div class="overlay">
+                        <h1>Excelencia Docente</h1>
+                        <p>Inspirando a la próxima generación de profesionales.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1523287562758-66c7fc58967f?q=80&w=2070&auto=format&fit=crop');">
+                    <div class="overlay">
+                        <h1>Impacto Global</h1>
+                        <p>Colaboraciones internacionales y avance científico.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="areas" class="content-section">
+    <h2>Nuestras Áreas de Especialización</h2>
+    <div class="grid-cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop" alt="Ingeniería">
+            <h3>Ingeniería Avanzada</h3>
+            <p>Desarrollo de soluciones tecnológicas y metodologías de vanguardia.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop" alt="Seguridad en la Nube">
+            <h3>Seguridad en las nubes</h3>
+            <p>Modelado y análisis de sistemas complejos para la ciencia moderna.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop" alt="Computación">
+            <h3>Ingeniería en Computación</h3>
+            <p>Investigación en arquitectura de software y procesamiento de datos.</p>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Portal Académico. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.carousel-slide');
+            let currentSlide = 0;
+
+            setInterval(() => {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }, 6000);
+        });
+    </script>
+</body>
+</html>
