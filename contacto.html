@@ -1,5 +1,37 @@
-<!-- modify this form HTML and place wherever you want your form -->
-<form
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Perfil Académico</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+				<a href="index.html" class="logo">
+                <i class="fas fa-user-graduate"></i>
+                <span>Academia & Investigación</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="investigacion.html">Investigación</a></li>
+                    <li><a href="publicaciones.html">Publicaciones</a></li>
+                    <li><a href="docencia.html">Docencia</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section contact-page">
+            <h2>Contacto</h2>
+            <p>Ponte en contacto conmigo para colaboraciones o consultas.</p>
+            <form
   action="https://formspree.io/f/myeyggjb"
   method="POST"
 >
@@ -13,4 +45,31 @@
   </label>
   <!-- your other form fields go here -->
   <button type="submit">Send</button>
-</form>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Nota / Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <!-- Marcador de posición para el CAPTCHA -->
+                <div class="form-group captcha-group">
+                    <label for="captcha">Código de Seguridad:</label>
+                    <div class="captcha-box">
+                        <span class="captcha-code">A7X9W2</span>
+                        <input type="text" id="captcha" name="captcha" placeholder="Escribe el código" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Portal Académico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
